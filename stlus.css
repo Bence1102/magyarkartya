@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+@keyframes moveBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -200px -200px; /* Mozgás iránya */
+    }
+  }
+  
+  body {
+    background: url('forras/hatter1.jpg') repeat;
+    animation: moveBackground 10s linear infinite;
+  }
