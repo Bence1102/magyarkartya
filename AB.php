@@ -75,7 +75,19 @@ class AB{
         echo "</table>";    
     }
 
+    public function modosit(){
 
+    }
+
+
+    public function beszur($tabla, $oszlop2, $tabla2,$oszlop,$ertek){
+            $szinMeret = $this->meret($tabla2);
+            for ($i=1; $i<= $szinMeret; $i++) {
+                $sql = "INSERT INTO $tabla($oszlop,$oszlop2)
+                VALUES ('$i','$ertek')";
+                $this->kapcsolat->query($sql);
+            }
+    }
     public function bezar(){
         $this->kapcsolat->close();
     }

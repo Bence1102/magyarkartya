@@ -25,7 +25,8 @@
                     <p>Kép</p>
                 </th>
               </tr>";
-        
+        $adatbazis->modosit("szin","nev","piros","vörös");
+        $adatbazis->beszur("kartya","formaAzon","szin","szinAzon",5);
         $adatbazis->tableone($matrix);
         $adatbazis->bezar();
         
